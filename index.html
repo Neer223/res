@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+        body {
+            background-color: gray;
+            padding: 120px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            /* space between cards */
+        }
+
+        .parent1 {
+            outline: 2px solid purple;
+            background-color: #d9afecd9;
+            border-radius: 20px;
+            width: 25vw;
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin: 0 15px;
+            animation: transition1 5s ease-in-out 1s 1 forwards;
+        }
+
+        @keyframes transition1 {
+            from {
+                transform: scale(0.025);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .parent2 {
+            outline: 2px solid purple;
+            background-color: #5599a5d1;
+            border-radius: 20px;
+            width: 25vw;
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin: 0 15px;
+            animation: transition2 5s ease-in-out 5s 1 forwards;
+        }
+
+        @keyframes transition2 {
+            from {
+                transform: scale(0.025);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .parent3 {
+            outline: 2px solid purple;
+            background-color: rgb(83 162 231 / 73%);
+            border-radius: 20px;
+            width: 25vw;
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin: 0 15px;
+            animation: transition3 6s ease-in-out 10s 1 forwards;
+        }
+        @keyframes transition3 {
+            from {
+                transform: scale(0.025);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* .card-container .parent:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .card-container .parent:nth-child(2) {
+            animation-delay: 7s;
+        }
+
+        .card-container .parent:nth-child(3) {
+            animation-delay: 15s;
+        } */
+
+
+        .spanclass {
+            border-radius: 20px;
+            border: 2px solid rgb(230, 229, 229);
+            font-family: "Baloo Bhai 2", sans-serif;
+            position: relative;
+            left: 20px;
+            margin: 10px;
+            padding: 8px;
+
+        }
+
+        h2 {
+            font-family: "Baloo Bhai 2", sans-serif;
+            position: relative;
+            left: 10px;
+            margin: 2px;
+            font-weight: 300;
+            padding: 10px;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+            top: 7px;
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 450;
+            position: relative;
+            left: 4px;
+            right: 4px;
+            color: rgb(165 31 105 / 77%);
+            text-align: justify;
+            padding: 10px 20px;
+            margin: 0 auto;
+            max-width: 95%;
+
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            color: rgb(83, 162, 231);
+            background-color: lightblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 9px;
+            font-weight: 200;
+            font-style: italic;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            text-align: center;
+        }
+
+        .button2 button {
+            color: rgb(83, 162, 231);
+            background-color: lightblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 9px;
+            font-weight: 200;
+            font-style: italic;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .button3 {
+            text-align: center;
+        }
+
+        .button3 button {
+            color: rgb(83, 162, 231);
+            background-color: lightblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 9px;
+            font-weight: 200;
+            font-style: italic;
+            text-align: center;
+            padding: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container"></div>
+    <div class="parent1">
+        <div>
+            <img height="" src="pookie.jpg" style="
+                        margin: auto;
+                        height: 35vh;
+                        border-radius: 20px;
+                        width: 25vw;
+                        padding: 12px; 
+                        box-sizing: border-box; ">
+            <span class="spanclass">Pakhu</span>
+            <span class="spanclass">Lovely Baby</span>
+            <div>
+                <h2>To, my fav girl :D</h2>
+            </div>
+            <div>
+                <p>Hehehe! 3 years?? Yesss! Pinch ur nose darling but yes its true :D! We have turned 3years older now,
+                    and I mean 'We', "NeerVa". I feel so blessed Pakhu, i have gotten such a blessing from god. I know
+                    there's still alot I am not good in. But I promise you to keep every single promise I made to you! I
+                    will give you the world not just words heh. I feel happy to have found my future wifey so soon heh.
+                <p>
+            </div>
+            <div class="button">
+                <button>Click here! 😁
+                    <a href="http://"></a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="parent2">
+        <div>
+            <img height="" src="apsara.jpg" style="
+                        margin: auto;
+                        height: 35vh;
+                        border-radius: 20px;
+                        width: 25vw;
+                        padding: 12px; 
+                        box-sizing: border-box; ">
+            <span class="spanclass">Blessed</span>
+            <span class="spanclass">To Have you</span>
+            <div>
+                <h2>My blessing</h2>
+            </div>
+            <div>
+                <p>Did I tell you?Oh shit, i guesss, i didnt? When my clock hits 11:11 na, whenever it is, I do make a
+                    small prayer for us, for you. You are the kind of girl who has seen me in shittiest phases. Sulking,
+                    crying, being depressed, subconsciously bruised, mentally tired, everything. Still, you stayed. You
+                    saw all my flaws and chose to stay. That's something I dont think anyone has ever done to me. </p>
+            </div>
+            <div class=" button2">
+                <button>What's inside? Hm..🤔</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="parent3">
+        <div>
+            <img height="" src="greet.jpg" style="
+                        margin: auto;
+                        height: 35vh;
+                        border-radius: 20px;
+                        width: 25vw;
+                        padding: 12px; 
+                        box-sizing: border-box; ">
+            <span class="spanclass">LOML</span>
+            <span class="spanclass">My Wifey</span>
+            <div>
+                <h2>And my everything</h2>
+            </div>
+            <div>
+                <p>Lol, so far it has been emotional na. Now, I want to thank you and ha I am super grateful to have
+                    found you! You are the reason i feel like changing myself for the better. I will keep all the
+                    promises that I have made. I will be a successful, strong, independent and reliable guy for you!
+                    That would be my love for you! Thank you so much, my precious girl for choosing me. Will keep you
+                    safe forever, meri bandariya!❣️💪
+                <p>
+            </div>
+            <div class="button3">
+                <button>Click to find out! 😁</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
